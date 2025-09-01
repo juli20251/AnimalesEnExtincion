@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Zoológico Digital - Portal Completo</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+</head>
+<body>
+    <div class="container">
+        <!-- ================================================================ -->
+        <!-- CABECERA PRINCIPAL -->
+        <!-- ================================================================ -->
+        <div class="header">
+            <h1>🦁 Zoológico Digital</h1>
+            <p>Sistema de Gestión Integral de Fauna - Portal del Visitante</p>
+            
+            <!-- Botones de acceso rápido a funciones principales -->
+
+        </div>
+        
+        <!-- ================================================================ -->
+        <!-- NAVEGACIÓN POR PESTAÑAS -->
+        <!-- ================================================================ -->
+        <div class="nav-tabs">
+            <!-- Pestañas para navegar entre diferentes secciones -->
+            <button class="nav-tab active" onclick="showSection('overview')">📊 Resumen</button>
+            <button class="nav-tab" onclick="showSection('animales')">🐾 Animales</button>
+            <button class="nav-tab" onclick="showSection('especies')">🦋 Especies</button>
+            <button class="nav-tab" onclick="showSection('areas')">🌳 Áreas</button>
+            <button class="nav-tab" onclick="showSection('presentaciones')">🎭 Shows</button>
+            <button class="nav-tab" onclick="showSection('entradas')">🎫 Entradas</button>
+            <button class="nav-tab" onclick="showSection('eventos')">📅 Eventos</button>
+        </div>
+        
+        <div class="content">
+            <!-- Cada sección debe tener un id único -->
+            <div id="overview" class="section active">
+                <!-- Tarjetas con estadísticas principales del zoológico -->
+                <div class="stats">
+                    <div class="stat-card">
+                        <div class="stat-number">8</div>
+                        <div class="stat-label">Animales</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">4</div>
+                        <div class="stat-label">Especies</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">Áreas</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">Cuidadores</div>
+                    </div>
+                </div>
+                
+                <h2 class="section-title">🎯 Resumen por Áreas</h2>
+                <div class="resumen-areas">
+                    <div class="card">
+                        <h3 class="card-title">
+                            <div class="card-icon">🌴</div>
+                            Selva Tropical
+                        </h3>
+                        <div class="card-info">
+                            <span class="card-label">Cuidador:</span>
+                            <span class="card-value">Laura Fernandez</span>
+                        </div>
+                        <div class="card-info">
+                            <span class="card-label">Animales:</span>
+                            <span class="card-value">4</span>
+                            <ul class="animal-list">
+                                <li>Copito (Mono Aullador)</li>
+                                <li>Luna (Mono Aullador)</li>
+                                <li>Ronaldo (Mono Aullador)</li>
+                                <li>Vinicius (Mono Aullador)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3 class="card-title">
+                            <div class="card-icon">🌾</div>
+                            Sabana Africana
+                        </h3>
+                        <div class="card-info">
+                            <span class="card-label">Cuidador:</span>
+                            <span class="card-value">Carlos Mendez</span>
+                        </div>
+                        <div class="card-info">
+                            <span class="card-label">Animales:</span>
+                            <span class="card-value">3</span>
+                            <ul class="animal-list">
+                                <li>Simba (León Africano)</li>
+                                <li>Nala (León Africano)</li>
+                                <li>Messi (León Africano)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3 class="card-title">
+                            <div class="card-icon">🏜️</div>
+                            Desierto
+                        </h3>
+                        <div class="card-info">
+                            <span class="card-label">Cuidador:</span>
+                            <span class="card-value">Pablo Aguilar</span>
+                        </div>
+                        <div class="card-info">
+                            <span class="card-label">Animales:</span>
+                            <span class="card-value">1</span>
+                            <ul class="animal-list">
+                                <li>Ferus (Camello)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sección de Nuestra Historia -->
+                <div id="historia" class="historia-section">
+                    <div class="historia-header">
+                        <h2 class="historia-title">🌿 Nuestra Historia</h2>
+                        <div class="historia-subtitle">Más de 25 años dedicados a la conservación</div>
+                    </div>
+                    
+                    <!-- Historia y misión del zoológico -->
+                    <div class="historia-content">
+                        <div class="historia-intro">
+                            <div class="historia-text-block">
+                                <p class="historia-paragraph">
+                                    Fundado en 1995, el Zoológico Digital nació como un sueño de conservación y educación ambiental en el corazón de Buenos Aires. 
+                                    Durante más de 25 años, hemos sido pioneros en la implementación de tecnologías digitales para el manejo y cuidado de fauna, 
+                                    convirtiéndonos en un referente internacional en conservación moderna.
+                                </p>
+                            </div>
+                            
+                            <div class="historia-text-block">
+                                <p class="historia-paragraph">
+                                    Nuestro compromiso va más allá de la exhibición de animales. Somos un centro de investigación, conservación y educación 
+                                    que trabaja incansablemente para proteger especies en peligro de extinción y educar a las futuras generaciones sobre 
+                                    la importancia de la biodiversidad. Cada visitante que recibimos se convierte en un embajador de la conservación.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- Tarjetas con información institucional -->
+                        <div class="historia-grid">
+                            <div class="historia-card mision-card">
+                                <div class="historia-card-header">
+                                    <div class="historia-card-icon">🎯</div>
+                                    <h3 class="historia-card-title">Nuestra Misión</h3>
+                                </div>
+                                <p class="historia-card-text">
+                                    Conservar la biodiversidad mediante la educación, investigación y programas de reproducción, 
+                                    inspirando a las personas a valorar y proteger la vida silvestre.
+                                </p>
+                            </div>
+                            
+                            <div class="historia-card vision-card">
+                                <div class="historia-card-header">
+                                    <div class="historia-card-icon">👁️</div>
+                                    <h3 class="historia-card-title">Nuestra Visión</h3>
+                                </div>
+                                <p class="historia-card-text">
+                                    Ser el zoológico líder en Latinoamérica, reconocido por nuestros programas de conservación 
+                                    y por crear conexiones significativas entre las personas y la naturaleza.
+                                </p>
+                            </div>
+                            
+                            <div class="historia-card valores-card">
+                                <div class="historia-card-header">
+                                    <div class="historia-card-icon">💚</div>
+                                    <h3 class="historia-card-title">Nuestros Valores</h3>
+                                </div>
+                                <p class="historia-card-text">
+                                    Respeto por la vida, compromiso con la conservación, excelencia en el cuidado animal, 
+                                    educación transformadora y responsabilidad ambiental.
+                                </p>
+                            </div>
+                            
+                            <div class="historia-card logros-card">
+                                <div class="historia-card-header">
+                                    <div class="historia-card-icon">🏆</div>
+                                    <h3 class="historia-card-title">Logros Destacados</h3>
+                                </div>
+                                <p class="historia-card-text">
+                                    Más de 50 especies reproducidas exitosamente, 3 programas internacionales de conservación, 
+                                    y más de 2 millones de visitantes educados en conservación.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- ======================================================== -->
+                        <!-- SUBSECCIÓN CUIDADORES - Equipo profesional -->
+                        <!-- ======================================================== -->
+                        <div class="cuidadores-section">
+                            <div class="cuidadores-header">
+                                <h3 class="cuidadores-title">👨‍⚕️ Nuestro Equipo de Cuidadores</h3>
+                                <p class="cuidadores-subtitle">Profesionales dedicados al bienestar animal</p>
+                            </div>
+                            
+                            <div class="cuidadores-grid">
+                                <div class="cuidador-card">
+                                    <div class="cuidador-avatar">
+                                        <div class="cuidador-icon">👩‍⚕️</div>
+                                    </div>
+                                    <div class="cuidador-info">
+                                        <h4 class="cuidador-name">Laura Fernandez</h4>
+                                        <div class="cuidador-area">Selva Tropical</div>
+                                        <div class="cuidador-contact">
+                                            <div class="contact-item">
+                                                <span class="contact-icon">📞</span>
+                                                <span class="contact-text">123456789</span>
+                                            </div>
+                                            <div class="contact-item">
+                                                <span class="contact-icon">✉️</span>
+                                                <span class="contact-text">laura.fernandez@zoologico.com</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="cuidador-card">
+                                    <div class="cuidador-avatar">
+                                        <div class="cuidador-icon">👨‍⚕️</div>
+                                    </div>
+                                    <div class="cuidador-info">
+                                        <h4 class="cuidador-name">Carlos Mendez</h4>
+                                        <div class="cuidador-area">Sabana Africana</div>
+                                        <div class="cuidador-contact">
+                                            <div class="contact-item">
+                                                <span class="contact-icon">📞</span>
+                                                <span class="contact-text">987654321</span>
+                                            </div>
+                                            <div class="contact-item">
+                                                <span class="contact-icon">✉️</span>
+                                                <span class="contact-text">carlos.mendez@zoologico.com</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="cuidador-card">
+                                    <div class="cuidador-avatar">
+                                        <div class="cuidador-icon">👨‍⚕️</div>
+                                    </div>
+                                    <div class="cuidador-info">
+                                        <h4 class="cuidador-name">Pablo Aguilar</h4>
+                                        <div class="cuidador-area">Desierto</div>
+                                        <div class="cuidador-contact">
+                                            <div class="contact-item">
+                                                <span class="contact-icon">📞</span>
+                                                <span class="contact-text">1133445566</span>
+                                            </div>
+                                            <div class="contact-item">
+                                                <span class="contact-icon">✉️</span>
+                                                <span class="contact-text">pablo.aguilar@zoologico.com</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sección de Preguntas Frecuentes -->
+                <div id="faq" class="faq-container">
+                    <h2 class="faq-title">❓ Preguntas Frecuentes</h2>
+                    
+                    <!-- Conjunto de preguntas y respuestas más comunes -->
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <span>¿Cuáles son los horarios de apertura?</span>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            El zoológico está abierto de lunes a viernes de 9:00 a 18:00, fines de semana de 8:30 a 19:00, y feriados de 9:00 a 17:00. La última entrada es una hora antes del cierre.
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <span>¿Puedo llevar comida al zoológico?</span>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            Sí, puedes traer tu propia comida y bebidas. Contamos con áreas de picnic designadas. No se permite alcohol. También tenemos cafeterías y restaurantes dentro del predio.
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <span>¿El zoológico es accesible para sillas de ruedas?</span>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            Sí, todas nuestras instalaciones son completamente accesibles. Ofrecemos préstamo gratuito de sillas de ruedas y tenemos baños adaptados en todo el predio.
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <span>¿Hay descuentos para grupos?</span>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            Ofrecemos 15% de descuento para grupos de 10 o más personas, y 20% para grupos escolares. Es necesario hacer reserva previa con al menos 7 días de anticipación.
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <span>¿Puedo alimentar a los animales?</span>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            Por la seguridad de los animales y visitantes, está prohibido alimentar a los animales con comida personal. Ofrecemos experiencias supervisadas de alimentación en horarios específicos.
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <span>¿Hay estacionamiento disponible?</span>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            Sí, contamos con estacionamiento para 200 vehículos por $500 pesos por día. Incluye 5 espacios para personas con discapacidad. El horario es de 8:00 a 20:00.
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <span>¿Puedo cancelar o cambiar mi entrada?</span>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            Las entradas online se pueden cancelar hasta 24 horas antes de la visita con reembolso completo. Los cambios de fecha se pueden hacer hasta 2 horas antes sin costo adicional.
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <span>¿Qué pasa si llueve?</span>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            El zoológico permanece abierto durante la lluvia ligera. Muchas exhibiciones tienen áreas cubiertas. En caso de clima severo, algunas actividades al aire libre pueden cancelarse.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ============================================================ -->
+            <!-- SECCIÓN ANIMALES - Catálogo completo de animales -->
+            <!-- ============================================================ -->
+            <div id="animales" class="section">
+                 <!-- Buscador dentro de la sección de animales -->
+                 <div class="search-controls">
+                    <div class="search-bar">
+                        <input type="text" id="searchInput" class="search-input" placeholder="Buscar por nombre o especie...">
+                        <button class="search-icon" onclick="filterAnimals()">🔍</button>
+                    </div>
+                </div>
+                <h2 class="section-title">🐾 Nuestros Animales</h2> <br>
+                
+               
+               
+                
+                <ul class="animal-list">
+                    <li class="animal-item" data-name="Copito" data-species="Mono aullador">
+                        <div class="animal-name">
+                            <div class="animal-icon">🐒</div>
+                            Copito
+                        </div>
+                        <div class="animal-content">
+                            <div class="animal-info">
+                                <span class="card-label">Edad:</span>
+                                <span class="card-value">5 años</span>
+                            </div>
+                            <div class="animal-info">
+                                <span class="card-label">Sexo:</span>
+                                <span class="card-value">Macho</span>
+                            </div>
+                            <div class="animal-info">
+                                <span class="card-label">Especie:</span>
+                                <span class="card-value">Mono aullador</span>
+                            </div>
+                            <div class="animal-info">
+                                <span class="card-label">Área:</span>
+                                <span class="card-value">Selva Tropical</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="animal-item" data-name="Luna" data-species="Mono aullador">
+                        <div class="animal-name">
+                            <div class="animal-icon">🐒</div>
+                            Luna
+                        </div>
+                        <div class="animal-content">
+                            <div class="animal-info">
+                                <span class="card-label">Edad:</span>
+                                <span class="card-value">4 años</span>
+                            </div>
+                            <div class="animal-info">
+                                <span class="card-label">Sexo:</span>
+                                <span class="card-value">Hembra</span>
+                            </div>
+                            <div class="animal-info">
+                                <span class="card-label">Especie:</span>
+                                <span class="card-value">Mono aullador</span>
+                            </div>
+                            <div class="animal-info">
+                                <span class="card-label">Área:</span>
+                                <span class="card-value">Selva Tropical</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="animal-item" data-name="Ronaldo" data-species="Mono aullador">
+                        <div class="animal-name">
+                            <div class="animal-icon">🐒</div>
+                            Ronaldo
+                        </div>
+                        <div class="animal-content">
+                            <div class="animal-info">
+                                <span class="card-label">Edad:</span>
+                                <span class="card-value">3 años</span>
+                            </div>
+                            <div class="animal-info">
+                                <span class="card-label">Sexo:</span>
+                                <span class="card-value">Macho</span>
+                            </div>
+                            <div class="animal-info">
+                                <span class="card-label">Especie:</span>
+                                <span class="card-value">Mono aullador</span>
+                            </div>
+                            <div class="animal-info">
+                                <span class="card-label">Área:</span>
+                                <span class="card-value">Selva Tropical</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="animal-item" data-name="Vinicius" data-species="Mono aullador">
+                        <div class="animal-name">
+                            <div class="animal-icon">🐒</div>
+                            Vinicius
+                        </div>
+                        <div class="animal-content">
+                            <div class="animal-info">
+                                <span class="card-label">Edad:</span>
+                                <span class="card-value">2 años</span>
+                            </div>
+                            <div class="animal-info">
+                                <span class="card-label">Sexo:</span>
+                                <span class="card-value">Macho</span>
+                            </div>
+                            <div class="animal-info">
+                                <span class="card-label">Especie:</span>
+                                <span class="card-value">Mono aullador</span>
+                            </div>
+                            <div class="animal-info">
+                                <span class="card-label">Área:</span>
+                                <span class="card-value">Selva Tropical</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="animal-item" data-name="Simba" data-species="León Africano">
+                        <div class="animal-name">
+                            <div class="animal-icon">🦁</div>
+                            Simba
+                        </div>
+                        <div class="animal-content">
+                            <div class="animal-info">
+                                <span class="card-label">Edad:</span>
+                                <span class="card-value">7 años</span>
+                            </div>
+                            <div class="animal-info">
+                                <span class="card-label">Sexo:</span>
+                                <span class="card-value">Macho</span>
+                            </div>
+                            <div class="animal-info">
+                                <span class="card-label">Especie:</span>
+                                <span class="card-value">León Africano</span>
+                            </div>
+                            <div class="animal-info">
+                                <span class="card-label">Área:</span>
+                                <span class="card-value">Sabana Africana</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="animal-item" data-name="Nala" data-species="León Africano">
+                        <div class="animal-name">
+                            <div class="animal-icon">🦁</div>
+                            Nala
+                        </div>
+                        <div class="animal-content">
+                            <div class="animal-info">
+                                <span class="card-label">Edad:</span>
+                                <span class="card-value">6 años</span>
+                            </div>
+                            <div class="animal-info">
+                                <span class="card-label">Sexo:</span>
+                                <span class="card-value">Hembra</span>
+                            </div>
+                            <div class="animal-info">
+                                <span class="card-label">Especie:</span>
+                                <span class="card-value">León Africano</span>
+                            </div>
+                            <div class="animal-info">
+                                <span class="card-label">Área:</span>
+                                <span class="card-value">Sabana Africana</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="animal-item" data-name="Messi" data-species="León Africano">
+                        <div class="animal-name">
+                            <div class="animal-icon">🦁</div>
+                            Messi
+                        </div>
+                        <div class="animal-content">
+                            <div class="animal-info">
+                                <span class="card-label">Edad:</span>
+                                <span class="card-value">5 años</span>
+                            </div>
+                            <div class="animal-info">
+                                <span class="card-label">Sexo:</span>
+                                <span class="card-value">Macho</span>
+                            </div>
+                            <div class="animal-info">
+                                <span class="card-label">Especie:</span>
+                                <span class="card-value">León Africano</span>
+                            </div>
+                            <div class="animal-info">
+                                <span class="card-label">Área:</span>
+                                <span class="card-value">Sabana Africana</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="animal-item" data-name="Ferus" data-species="Camello">
+                        <div class="animal-name">
+                            <div class="animal-icon">🐪</div>
+                            Ferus
+                        </div>
+                        <div class="animal-content">
+                            <div class="animal-info">
+                                <span class="card-label">Edad:</span>
+                                <span class="card-value">8 años</span>
+                            </div>
+                            <div class="animal-info">
+                                <span class="card-label">Sexo:</span>
+                                <span class="card-value">Macho</span>
+                            </div>
+                            <div class="animal-info">
+                                <span class="card-label">Especie:</span>
+                                <span class="card-value">Camello</span>
+                            </div>
+                            <div class="animal-info">
+                                <span class="card-label">Área:</span>
+                                <span class="card-value">Desierto</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- ============================================================ -->
+            <!-- SECCIÓN ESPECIES - Información sobre especies del zoológico -->
+            <!-- ============================================================ -->
+            <div id="especies" class="section">
+                <!-- Buscador dentro de la sección de especies -->
+                <div class="search-controls">
+                    <div class="search-bar">
+                        <input type="text" id="speciesSearchInput" class="search-input" placeholder="Buscar por nombre de especie...">
+                        <button class="search-icon" onclick="filterSpecies()">🔍</button>
+                    </div>
+                </div>
+                <h2 class="section-title">🦋 Especies en el Zoológico</h2>
+                <br>
+                <div class="cards-grid">
+                    <div class="card especie-card" data-species="Mono Aullador">
+                        <div class="card-title">
+                            <div class="card-icon">🐒</div>
+                            Mono Aullador
+                        </div>
+                        <div class="card-info">
+                            <span class="card-label">Machos:</span>
+                            <span class="card-value">3</span>
+                        </div>
+                        <div class="card-info">
+                            <span class="card-label">Hembras:</span>
+                            <span class="card-value">1</span>
+                        </div>
+                        <div class="card-info">
+                            <span class="card-label">Total:</span>
+                            <span class="card-value">4</span>
+                        </div>
+                        <div class="card-info">
+                            <span class="card-label">Área:</span>
+                            <span class="card-value">Selva Tropical</span>
+                        </div>
+                    </div>
+                    <div class="card especie-card" data-species="León Africano">
+                        <div class="card-title">
+                            <div class="card-icon">🦁</div>
+                            León Africano
+                        </div>
+                        <div class="card-info">
+                            <span class="card-label">Machos:</span>
+                            <span class="card-value">2</span>
+                        </div>
+                        <div class="card-info">
+                            <span class="card-label">Hembras:</span>
+                            <span class="card-value">1</span>
+                        </div>
+                        <div class="card-info">
+                            <span class="card-label">Total:</span>
+                            <span class="card-value">3</span>
+                        </div>
+                        <div class="card-info">
+                            <span class="card-label">Área:</span>
+                            <span class="card-value">Sabana Africana</span>
+                        </div>
+                    </div>
+                    <div class="card especie-card" data-species="Camello">
+                        <div class="card-title">
+                            <div class="card-icon">🐪</div>
+                            Camello
+                        </div>
+                        <div class="card-info">
+                            <span class="card-label">Machos:</span>
+                            <span class="card-value">1</span>
+                        </div>
+                        <div class="card-info">
+                            <span class="card-label">Hembras:</span>
+                            <span class="card-value">0</span>
+                        </div>
+                        <div class="card-info">
+                            <span class="card-label">Total:</span>
+                            <span class="card-value">1</span>
+                        </div>
+                        <div class="card-info">
+                            <span class="card-label">Área:</span>
+                            <span class="card-value">Desierto</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- ============================================================ -->
+            <!-- SECCIÓN ÁREAS - Información sobre hábitats y zonas -->
+            <!-- ============================================================ -->
+            <div id="areas" class="section">
+                   <!-- Buscador dentro de la sección de áreas -->
+                <div class="search-controls">
+                    <div class="search-bar">
+                        <input type="text" id="areaSearchInput" class="search-input" placeholder="Buscar por nombre de área...">
+                        <button class="search-icon" onclick="filterAreas()">🔍</button>
+                    </div>
+                </div>
+                <h2 class="section-title">🌳 Hábitats y Áreas</h2> <br>
+                <div class="cards-grid">
+                    <div class="card area-card" data-area="Selva Tropical">
+                        <div class="card-title">
+                            <div class="card-icon">🌴</div>
+                            Selva Tropical
+                        </div>
+                        <div class="card-info">
+                            <span class="card-label">Cuidador:</span>
+                            <span class="card-value">Laura Fernandez</span>
+                        </div>
+                        <div class="card-info">
+                            <span class="card-label">Animales:</span>
+                            <ul class="animal-list">
+                                <li>Copito (Mono Aullador)</li>
+                                <li>Luna (Mono Aullador)</li>
+                                <li>Ronaldo (Mono Aullador)</li>
+                                <li>Vinicius (Mono Aullador)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card area-card" data-area="Sabana Africana">
+                        <div class="card-title">
+                            <div class="card-icon">🌾</div>
+                            Sabana Africana
+                        </div>
+                        <div class="card-info">
+                            <span class="card-label">Cuidador:</span>
+                            <span class="card-value">Carlos Mendez</span>
+                        </div>
+                        <div class="card-info">
+                            <span class="card-label">Animales:</span>
+                            <ul class="animal-list">
+                                <li>Simba (León Africano)</li>
+                                <li>Nala (León Africano)</li>
+                                <li>Messi (León Africano)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card area-card" data-area="Desierto">
+                        <div class="card-title">
+                            <div class="card-icon">🏜️</div>
+                            Desierto
+                        </div>
+                        <div class="card-info">
+                            <span class="card-label">Cuidador:</span>
+                            <span class="card-value">Pablo Aguilar</span>
+                        </div>
+                        <div class="card-info">
+                            <span class="card-label">Animales:</span>
+                            <ul class="animal-list">
+                                <li>Ferus (Camello)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- ============================================================ -->
+            <!-- SECCIÓN PRESENTACIONES - Shows y actividades especiales -->
+            <!-- ============================================================ -->
+            <div id="presentaciones" class="section">
+                <h2 style="margin-bottom: 20px; color: #2c3e50;">🎭 Shows y Presentaciones Especiales Del Día</h2>
+                <div class="cards-grid">
+                    <div class="card presentacion-card">
+                        <div class="card-title">
+                            <div class="card-icon">🦁</div>
+                            Show: Charla sobre Grandes Felinos
+                        </div>
+                        <div class="card-info">
+                            <span class="card-label">Duración:</span>
+                            <span class="card-value">45 minutos</span>
+                        </div>
+                        <div class="card-info">
+                            <span class="card-label">Área:</span>
+                            <span class="card-value">Auditorio Principal</span>
+                        </div>
+                        <div class="card-info">
+                            <span class="card-label">Cuidador:</span>
+                            <span class="card-value">Laura Fernandez</span>
+                        </div>
+                    </div>
+                    <div class="card presentacion-card">
+                        <div class="card-title">
+                            <div class="card-icon">🐦</div>
+                            Show: Exhibición de Aves Tropicales
+                        </div>
+                        <div class="card-info">
+                            <span class="card-label">Duración:</span>
+                            <span class="card-value">30 minutos</span>
+                        </div>
+                        <div class="card-info">
+                            <span class="card-label">Área:</span>
+                            <span class="card-value">Área Tropical</span>
+                        </div>
+                        <div class="card-info">
+                            <span class="card-label">Cuidador:</span>
+                            <span class="card-value">Carlos Mendez</span>
+                        </div>
+                    </div>
+                    <div class="card presentacion-card">
+                        <div class="card-title">
+                            <div class="card-icon">🌙</div>
+                            Show: Visita Nocturna
+                        </div>
+                        <div class="card-info">
+                            <span class="card-label">Duración:</span>
+                            <span class="card-value">2 horas</span>
+                        </div>
+                        <div class="card-info">
+                            <span class="card-label">Área:</span>
+                            <span class="card-value">Todo el Zoológico</span>
+                        </div>
+                        <div class="card-info">
+                            <span class="card-label">Cuidador:</span>
+                            <span class="card-value">Pablo Aguilar</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- ============================================================ -->
+            <!-- SECCIÓN ENTRADAS - Precios y tarifas -->
+            <!-- ============================================================ -->
+            <div id="entradas" class="section">
+                <h2 style="margin-bottom: 30px; color: #2c3e50;">🎫 Tarifas y Entradas</h2>
+                
+                <div class="cards-grid">
+                    <!-- Tabla de precios de entradas generales -->
+                    <div class="card">
+                        <div class="card-title">
+                            Valor Entrada General
+                        </div>
+                        <table class="price-table">
+                            <thead>
+                                <tr>
+                                    <th>Categoría</th>
+                                    <th>Precio</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Adultos</td>
+                                    <td>$2,500</td>
+                                </tr>
+                                <tr>
+                                    <td>Niños (3-12 años)</td>
+                                    <td>$1,800</td>
+                                </tr>
+                                <tr>
+                                    <td>Estudiantes</td>
+                                    <td>$2,000</td>
+                                </tr>
+                                <tr>
+                                    <td>Jubilados</td>
+                                    <td>$1,500</td>
+                                </tr>
+                                <tr>
+                                    <td>Menores de 3 años</td>
+                                    <td>Gratis</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br>
+                        <a href="ComprarEntradas.html" class="btn" style="margin-top: 15px;">
+                            Comprar Entradas
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Historial de compras -->
+                <div id="purchaseHistoryContainer" style="margin-top: 30px; text-align: center;">
+                    <h3>📜 Historial de Compras</h3>
+                    <ul id="purchaseHistory" style="list-style: none; padding: 0; background: #f8f9fa; border-radius: 8px; border: 1px solid #e0e0e0; padding: 15px;"></ul>
+                </div>
+            </div>
+            
+            <!-- ================================================================ -->
+            <!-- SECCIÓN HISTORIA/NOSOTROS - Información institucional -->
+            <!-- ================================================================ -->
+            
+            <!-- ================================================================ -->
+            <!-- SECCIÓN FAQ - Preguntas frecuentes fija al final -->
+            <!-- ================================================================ -->
+            
+            <!-- ================================================================ -->
+            <!-- MODALES PARA INTERACCIONES DEL USUARIO -->
+            <!-- ================================================================ -->
+            
+            <!-- Modal para compra de entradas online -->
+            <div id="ticketModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    </div>
+                    <div class="modal-body">
+                        <form id="ticketForm">
+                            <!-- Selección de fecha de visita -->
+                            <div class="form-group">
+                                <label>Fecha de Visita:</label>
+                                <input type="date" id="visitDate" required>
+                            </div>
+                            
+
+                            <!-- Selección de cantidad de entradas por categoría -->
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>Adultos ($2,500):</label>
+                                    <input type="number" id="adults" min="0" value="0" onchange="updateTotal()">
+                                </div>
+                                <div class="form-group">
+                                    <label>Niños ($1,800):</label>
+                                    <input type="number" id="children" min="0" value="0" onchange="updateTotal()">
+                                </div>
+                            </div>
+                            
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>Adolescentes ($2,000):</label>
+                                    <input type="number" id="students" min="0" value="0" onchange="updateTotal()">
+                                </div>
+                                <div class="form-group">
+                                    <label>Jubilados ($1,500):</label>
+                                    <input type="number" id="seniors" min="0" value="0" onchange="updateTotal()">
+                                </div>
+                            </div>
+                            
+                            <!-- Cálculo automático del total -->
+                            <div class="card" style="background: #f8f9fa; margin: 20px 0; padding: 15px;">
+                                <h4 style="color: #2c3e50;">Total: $<span id="totalPrice">0</span></h4>
+                            </div>
+                            
+                            <!-- Datos del comprador -->
+                            <div class="form-group">
+                                <label>Nombre Completo:</label>
+                                <input type="text" id="customerName" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>Email:</label>
+                                <input type="email" id="customerEmail" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>Teléfono:</label>
+                                <input type="tel" id="customerPhone" required>
+                            </div>
+                            
+                            <!-- Método de pago -->
+                            <div class="form-group">
+                                <label>Método de Pago:</label>
+                                <select id="paymentMethod" required>
+                                    <option value="">Seleccionar</option>
+                                    <option value="tarjeta">Tarjeta de Crédito/Débito</option>
+                                    <option value="efectivo">Efectivo (en taquilla)</option>
+                                </select>
+                            </div>
+                            
+                            <!-- Botón de procesamiento de pago -->
+                            <button type="button" class="btn btn-success" onclick="processPayment()">
+                                💳 Procesar Pago
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ================================================================ -->
+            <!-- SECCIÓN EVENTOS - Calendario y reservas de eventos -->
+            <!-- ================================================================ -->
+            <div id="eventos" class="section">
+                <h2 class="section-title">📅 Eventos</h2>
+                <div class="calendar-grid">
+                    <!-- Eventos de enero -->
+                    <div class="calendar-day" onclick="showEventDetails('Taller de Fotografía', '2025-01-10', '9:00 AM', 25, 1500)">
+                        <span>10</span>
+                        <span>Ene</span>
+                        <div class="event-dot"></div>
+                    </div>
+                    <div class="calendar-day" onclick="showEventDetails('Caminata Ecológica', '2025-01-15', '7:00 AM', 20, 1000)">
+                        <span>15</span>
+                        <span>Ene</span>
+                        <div class="event-dot"></div>
+                    </div>
+                    <div class="calendar-day" onclick="showEventDetails('Charla sobre Biodiversidad', '2025-01-20', '4:00 PM', 50, 1200)">
+                        <span>20</span>
+                        <span>Ene</span>
+                        <div class="event-dot"></div>
+                    </div>
+                    <div class="calendar-day" onclick="showEventDetails('Observación de Estrellas', '2025-01-25', '8:00 PM', 15, 2000)">
+                        <span>25</span>
+                        <span>Ene</span>
+                        <div class="event-dot"></div>
+                    </div>
+
+                    <!-- Eventos de febrero -->
+                    <div class="calendar-day" onclick="showEventDetails('Taller de Conservación', '2025-02-05', '11:00 AM', 30, 1800)">
+                        <span>5</span>
+                        <span>Feb</span>
+                        <div class="event-dot"></div>
+                    </div>
+                    <div class="calendar-day" onclick="showEventDetails('Safari Fotográfico', '2025-02-10', '6:00 AM', 20, 2500)">
+                        <span>10</span>
+                        <span>Feb</span>
+                        <div class="event-dot"></div>
+                    </div>
+                    <div class="calendar-day" onclick="showEventDetails('Taller de Plantas Nativas', '2025-02-15', '10:00 AM', 30, 1200)">
+                        <span>15</span>
+                        <span>Feb</span>
+                        <div class="event-dot"></div>
+                    </div>
+                    <div class="calendar-day" onclick="showEventDetails('Caminata Nocturna', '2025-02-20', '8:00 PM', 15, 1800)">
+                        <span>20</span>
+                        <span>Feb</span>
+                        <div class="event-dot"></div>
+                    </div>
+                </div>
+
+                <!-- Detalles del evento -->
+                <div id="eventDetails" style="display: none; margin-top: 20px;">
+                    <div class="especie-card">
+                        <div class="card-title">
+                            <div class="card-icon">📅</div>
+                            <span id="eventName"></span>
+                        </div>
+                        <div class="card-info">
+                            <span class="card-label">Fecha:</span>
+                            <span id="eventDate" class="card-value"></span>
+                        </div>
+                        <div class="card-info">
+                            <span class="card-label">Hora:</span>
+                            <span id="eventTime" class="card-value"></span>
+                        </div>
+                        <div class="card-info">
+                            <span class="card-label">Cupo Máximo:</span>
+                            <span id="eventCapacity" class="card-value"></span> personas
+                        </div>
+                        <div class="card-info">
+                            <span class="card-label">Precio por Persona:</span>
+                            <span id="eventPrice" class="card-value"></span>
+                        </div>
+                        <a href="reserva.html" class="btn">Reservar</a>
+                    </div>
+                </div>
+
+                <!-- Historial de reservas -->
+                <div id="reservationHistoryContainer" style="margin-top: 30px; text-align: center;">
+                    <h3>📜 Historial de Reservas</h3>
+                    <ul id="reservationHistory" style="list-style: none; padding: 0; background: #f8f9fa; border-radius: 8px; border: 1px solid #e0e0e0; padding: 15px;"></ul>
+                </div>
+            </div>
+        </div>
+        <br>
+    <!-- SCRIPTS JAVASCRIPT - Funcionalidad interactiva -->
+    <script src="index.js"></script>
+</body>
+</html>
